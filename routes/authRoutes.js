@@ -8,13 +8,18 @@ module.exports = app => {
     })
   );
   //logging in using google
-  app.get("/auth/google/callback", passport.authenticate("google"));
+  app.get(
+    "/auth/google/callback",
+    passport.authenticate("google"),
+    (req, res) => {
+      res.redirect("/surveys");
+    }
+  );
 
   // logging out
   app.get("/api/logout", (req, res) => {
     req.logout();
-    res.send(req.user);
-    console.log("you logged out");
+    res.redirect("/");
   });
   // checking whats current logged in
   app.get("/api/current_user", (req, res) => {

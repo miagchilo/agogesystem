@@ -29,5 +29,9 @@
     "passport": "^0.4.0",
     "passport-google-oauth20": "^2.0.0",
     "stripe": "^7.2.0"
+  },
+  "resolutions": {
+    "browserlist": "4.6.2",
+    "caniuse-lite": "1.0.30000974"
   }
 }

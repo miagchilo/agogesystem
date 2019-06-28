@@ -19,9 +19,9 @@ class Header extends Component {
           <li key={1}>
             <Payments />
           </li>,
-          <li key="3" style={{ margin: "0 10px" }}>
-            Credits: {this.props.auth.googleId}
-          </li>,
+          // <li key="3" style={{ margin: "0 10px" }}>
+          //   Credits: {this.props.auth.googleId}
+          // </li>,
           <li key={2}>
             <a href="/api/logout">Logout</a>
           </li>
@@ -38,7 +38,21 @@ class Header extends Component {
           >
             Logo
           </Link>
-          <ul className="right">{this.renderContent()}</ul>
+          <ul className="right hide-on-med-and-down">
+            <li>
+              <Link to="/">About</Link>
+            </li>
+            <li>
+              <Link to="/">Train with us</Link>
+            </li>
+            <li>
+              <Link to="/">Contact</Link>
+            </li>
+            <li>
+              <Link to="/">Blog</Link>
+            </li>
+            {this.renderContent()}
+          </ul>
         </div>
       </nav>
     );

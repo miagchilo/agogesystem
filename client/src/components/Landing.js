@@ -53,6 +53,7 @@ const Landing = () => {
                 <img alt="img" src="images/sample-1.jpg" />
               </div>
               <div className="card-content">
+                <h5 className="center">Reichmond</h5>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Obcaecati provident deserunt, pariatur eius minima quisquam
@@ -73,11 +74,12 @@ const Landing = () => {
                 <img alt="img" src="images/sample-1.jpg" />
               </div>
               <div className="card-content">
+                <h5 className="center">Dan</h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Beatae non eos magnam sunt laborum pariatur saepe maiores
-                  eveniet libero culpa consequuntur, itaque aut nisi fugit
-                  aspernatur sit! Modi, in aliquam?
+                  Since joining Agoge System I gained a lot of strength and
+                  knowledge. But most importantly I now have more self
+                  confidence. With the use of their program, it helped me grow
+                  to a healthier lifestyle.
                 </p>
               </div>
               <div className="card-action">
@@ -92,6 +94,7 @@ const Landing = () => {
                 <img alt="img" src="images/sample-1.jpg" />
               </div>
               <div className="card-content">
+                <h5 className="center">Ryan</h5>
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Soluta tenetur nemo impedit optio corporis temporibus illo

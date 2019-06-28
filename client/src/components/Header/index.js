@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import Payments from "./Payments";
+import Payments from "../Payments";
+
+import { Navigation } from "./style";
 
 class Header extends Component {
   renderContent() {
@@ -30,7 +32,7 @@ class Header extends Component {
   }
   render() {
     return (
-      <nav>
+      <Navigation>
         <div className="nav-wrapper">
           <Link
             to={this.props.auth ? "/surveys" : "/"}
@@ -54,7 +56,7 @@ class Header extends Component {
             {this.renderContent()}
           </ul>
         </div>
-      </nav>
+      </Navigation>
     );
   }
 }

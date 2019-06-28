@@ -50,7 +50,7 @@ const Landing = () => {
           <div className="col s12 m4 l4">
             <div className="card">
               <div className="card-image">
-                <img alt="img" src="images/sample-1.jpg" />
+                <img alt="img" src="http://lorempixel.com/200/200/people/" />
               </div>
               <div className="card-content">
                 <h5 className="center">Reichmond</h5>
@@ -71,7 +71,7 @@ const Landing = () => {
           <div className="col s12 m4 l4">
             <div className="card">
               <div className="card-image">
-                <img alt="img" src="images/sample-1.jpg" />
+                <img alt="img" src="http://lorempixel.com/200/200/people/" />
               </div>
               <div className="card-content">
                 <h5 className="center">Dan</h5>
@@ -91,7 +91,7 @@ const Landing = () => {
           <div className="col s12 m4 l4">
             <div className="card">
               <div className="card-image">
-                <img alt="img" src="images/sample-1.jpg" />
+                <img alt="img" src="http://lorempixel.com/200/200/people/" />
               </div>
               <div className="card-content">
                 <h5 className="center">Ryan</h5>

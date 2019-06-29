@@ -1,12 +1,14 @@
 import React from "react";
+import { HeroStyle, TextBox, HeadingPrimary, HeadMain, HeadSub } from "./style";
+import { Btn } from "../../styles/Buttons";
 
 const Landing = () => {
   return (
     <div>
-      <div className="section no-pad-bot" id="index-banner">
-        <div className="container">
+      <HeroStyle>
+        <TextBox>
           <div className="row center">
-            <div className="video-container">
+            {/* <div className="video-container">
               <iframe
                 width="853"
                 height="480"
@@ -15,22 +17,27 @@ const Landing = () => {
                 allowfullscreen
                 title="agogesystem"
               />
-            </div>
-            <h5 className="header col s12 light">
-              Your Calisthenics Journey Starts Here
-            </h5>
+            </div> */}
+            <HeadingPrimary>
+              <HeadMain className="header col s12 light center-align hide-on-small-only">
+                Calisthenics Journey Starts Here
+              </HeadMain>
+              <HeadSub className="header col s12 light center-align">
+                Don't Settle for Average
+              </HeadSub>
+            </HeadingPrimary>
           </div>
           <div className="row center">
-            <a
+            <Btn
+              white
               href="https://tattp://materializecss.com/getting-started.html"
               id="download-button"
-              className="btn-large waves-effect waves-light orange"
             >
               Get Started
-            </a>
+            </Btn>
           </div>
-        </div>
-      </div>
+        </TextBox>
+      </HeroStyle>
       <blockquote>
         A lot of [newbies and enthusiasts] fail their fitness journey. Why?
         Simple. They don't know where and how to start. There are a lot of

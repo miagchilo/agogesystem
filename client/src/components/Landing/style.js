@@ -12,6 +12,19 @@ export const HeroStyle = styled.div`
   background-position: top;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &::after {
+    background-color: ${color.darkgrey};
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
 `;
 
 export const TextBox = styled.div`

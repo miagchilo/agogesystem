@@ -7,7 +7,7 @@ import GlobalStyle from "../styles/GlobalStyle";
 
 import Header from "./Header";
 import Loading from "./Loading";
-import Footer from "./Footer";
+import Footer from "./Footer/";
 import Dashboard from "./Dashboard";
 import SurveyNew from "./surveys/SurveyNew";
 

@@ -7,6 +7,7 @@ import SecImg from "../../images/section.jpg";
 
 import dan from "../../images/dan.jpg";
 import ryan from "../../images/ryan.jpg";
+import reichmond from "../../images/bobong.jpeg";
 
 export const HeroStyle = styled.div`
   position: relative;
@@ -123,14 +124,30 @@ export const SectionClient = styled.div`
 `;
 
 export const Client = styled.div`
-  background-color: rgba(225, 225, 225, 0.8);
+  background-color: rgba(225, 225, 225, 0.9);
+  height: 50rem;
   font-size: 1.5rem;
   padding: 2.5rem;
   margin: 2rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(#fff, 0.15);
-  transition: transition 0.3s;
+  box-shadow: 0 1.5rem 4rem rgba(#fff, 0.1);
+  transition: all 0.8s;
+
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  h3 {
+    letter-spacing: 0.5rem;
+    color: ${color.blue};
+  }
+  p {
+    color: ${color.black};
+    /* text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 5rem;
+    line-height: 2; */
+  }
   :hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
@@ -147,5 +164,18 @@ export const Client = styled.div`
   }
   .ryan {
     background-image: url(${ryan});
+  }
+  .reichmond {
+    background-image: url(${reichmond});
+  }
+`;
+
+export const SectionPricing = styled.div`
+  background-color: ${color.lightGrey};
+  padding: 15rem 0;
+
+  .story {
+    width: 75%;
+    margin: 0 auto;
   }
 `;

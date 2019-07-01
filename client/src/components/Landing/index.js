@@ -8,7 +8,8 @@ import {
   HeadSub,
   MainContent,
   SectionClient,
-  Client
+  Client,
+  SectionPricing
 } from "./style";
 
 import { Btn } from "../../styles/Buttons";
@@ -53,7 +54,7 @@ const Landing = () => {
         want. (Obviously, you have to do the work).
       </blockquote> */}
       <MainContent>
-        <section className="">
+        <section className="container">
           <h2 className="center-align">the agogesystem promise</h2>
           <p className="flow-text center-align">
             At MusclePharm, we promise to develop and bring to market the
@@ -78,45 +79,52 @@ const Landing = () => {
           <div className="col l4 s12 box">
             <Client>
               <div className="img-circle dan" />
-              <h3>Name</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                in nemo quaerat laudantium enim sequi expedita ape
+              <h3>Dan</h3>
+              <p className="flow-text">
+                "I used to do weight training 4 years ago, I consistently hit a
+                plateau in my training and frustrated. I was desperate for help
+                in my training and then my friend introduce me to the agoge
+                system I never been happier on my progress! Thank you agoge
+                system! "
               </p>
+              <a href="http://takatoshiwada.com/blog">Read More</a>
             </Client>
           </div>
           <div className="col l4 s12 box">
             <Client>
               <div className="img-circle ryan" />
-              <h3>Name</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                in nemo quaerat laudantium enim sequi expedita apeLorem ipsum
-                dolor sit amet consectetur adipisicing elit. Debitis in nemo
-                quaerat laudantium enim sequi expedita apeLorem ipsum dolor sit
-                amet consectetur adipisicing elit. Debitis in nemo quaerat
-                laudantium enim sequi expedita ape
+              <h3>Ryan</h3>
+              <p className="flow-text">
+                "Since I joined agogesystem I never dreamnt of having the body
+                I've always wanted, do yourself a favor be part of the family! "
               </p>
+              <a href="http://takatoshiwada.com/blog">Read More</a>
             </Client>
           </div>
           <div className="col l4 s12 box">
             <Client>
-              <div className="img-circle" />
-              <h3>Name</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                in nemo quaerat laudantium enim sequi expedita ape
+              <div className="img-circle reichmond" />
+              <h3>Reichmond</h3>
+              <p className="flow-text">
+                "I'm a family man a middle-aged father of 3, working 50+hours a
+                a week and manages a personal business, I gave up the of
+                becoming fit because of the lack of time and energy. but Agoge
+                system proved me wrong and believed in me to my fullest
+                potential, if there's a will, there's a way! Thank you, agoge
+                family!"
               </p>
+              <a href="http://takatoshiwada.com/blog">Read More</a>
             </Client>
           </div>
         </div>
       </SectionClient>
       {/* about us */}
-      <div className="section">
+      <SectionPricing>
+        {/* <h2 className="center-align">the agogesystem promise</h2>
         <div className="row">
-          <h5 className="header col s12 l12 center">About Us</h5>
-        </div>
-      </div>
+          <div className="story">TEXT</div>
+        </div> */}
+      </SectionPricing>
       {/* end of about us */}
     </div>
   );

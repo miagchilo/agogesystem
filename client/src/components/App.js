@@ -11,8 +11,6 @@ import Footer from "./Footer";
 import Dashboard from "./Dashboard";
 import SurveyNew from "./surveys/SurveyNew";
 
-const Landing = lazy(() => import("./Landing"));
-
 const Landings = lazy(() => {
   return Promise.all([
     import("./Landing"),
@@ -31,10 +29,10 @@ class App extends Component {
         <Header />
         <Suspense fallback={<Loading />}>
           <Route exact path="/" component={Landings} />
+          <Footer />
         </Suspense>
         <Route exact path="/surveys" component={Dashboard} />
         <Route path="/surveys/new" component={SurveyNew} />
-        <Footer />
       </BrowserRouter>
     );
   }

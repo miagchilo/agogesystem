@@ -6,6 +6,7 @@ import GlobalStyle from "../styles/GlobalStyle";
 //! defining all actions as *
 
 import Header from "./Header";
+import Coaching from "./Coaching";
 import Loading from "./Loading";
 import Footer from "./Footer/";
 import Dashboard from "./Dashboard";
@@ -29,6 +30,7 @@ class App extends Component {
         <Header />
         <Suspense fallback={<Loading />}>
           <Route exact path="/" component={Landings} />
+          <Route exact path="/coaching" component={Coaching} />
           <Footer />
         </Suspense>
         <Route exact path="/surveys" component={Dashboard} />

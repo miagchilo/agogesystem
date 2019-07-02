@@ -14,7 +14,7 @@ import SurveyNew from "./surveys/SurveyNew";
 const Landings = lazy(() => {
   return Promise.all([
     import("./Landing"),
-    new Promise(resolve => setTimeout(resolve, 5000))
+    new Promise(resolve => setTimeout(resolve, 100))
   ]).then(([moduleExports]) => moduleExports);
 });
 

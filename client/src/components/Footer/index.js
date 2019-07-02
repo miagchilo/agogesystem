@@ -6,10 +6,10 @@ import logo from "../../images/load.png";
 
 const Footer = () => {
   return (
-    <FooterStyle class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
+    <FooterStyle className="page-footer">
+      <div className="container">
+        <div className="row">
+          <div className="col l6 s12">
             <div className="logo-box left">
               <img src={logo} alt="agoge" className="footer_logo" />
             </div>
@@ -21,30 +21,30 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Follow us on social media</h5>
+          <div className="col l4 offset-l2 s12">
+            <h5 className="white-text">Follow us on social media</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3" href="#!">
-                  <i class="fab fa-facebook-square" />
+                <a className="grey-text text-lighten-3" href="#!">
+                  <i className="fab fa-facebook-square" />
                 </a>
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="#!">
-                  <i class="fab fa-facebook-messenger" />
+                <a className="grey-text text-lighten-3" href="#!">
+                  <i className="fab fa-facebook-messenger" />
                 </a>
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="#!">
-                  <i class="fab fa-instagram" />
+                <a className="grey-text text-lighten-3" href="#!">
+                  <i className="fab fa-instagram" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
+      <div className="footer-copyright">
+        <div className="container">
           © 2019 Copyright by{" "}
           <a href="http://takatoshiwada.com">Takatoshi Wada</a>
         </div>

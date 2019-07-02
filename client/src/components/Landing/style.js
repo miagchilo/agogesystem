@@ -82,7 +82,7 @@ export const MainContent = styled.main`
     text-transform: uppercase;
     font-weight: 700;
     color: ${color.red};
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     padding: 0 1rem 2rem;
   }
   p {

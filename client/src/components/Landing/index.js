@@ -57,9 +57,9 @@ const Landing = () => {
           <h2 className="center-align">the agogesystem promise</h2>
           <p className="flow-text center-align">
             At Agoge System, we promise that you will be coached by
-            Practitioners of the as well. Not just businessmen who want to earn
-            money. You will be treated as part of our tribe, not just a single
-            transaction. We want to see you grow into the best version of
+            Practitioners of the game as well. Not just businessmen who want to
+            earn money. You will be treated as part of our tribe, not just a
+            single transaction. We want to see you grow into the best version of
             yourself, not just forget about you after providing you a plan. We
             promise ro provide you with good programming to give you the most
             improvements in a smart and pratical way. We don't believe in the

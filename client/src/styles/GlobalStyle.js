@@ -13,7 +13,8 @@ const GlobalStyle = createGlobalStyle`
         font-size: 10px;
     }
     body {
-        font-family: "Lato", sans-serif;
+        @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat&display=swap');
+        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         line-height: 1.7;
         color: #777;

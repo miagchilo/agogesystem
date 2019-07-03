@@ -17,19 +17,6 @@ export const HeroStyle = styled.div`
   background-position: top;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-  &::after {
-    background-color: ${color.black};
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.4;
-  }
 `;
 export const VideoStyle = styled.video`
   top: 0px;
@@ -39,6 +26,7 @@ export const VideoStyle = styled.video`
   width: 100%;
   object-fit: cover;
   height: 100%;
+  opacity: 0.9;
 `;
 export const TextBox = styled.div`
   position: absolute;
@@ -69,6 +57,7 @@ export const HeadSub = styled.span`
   padding: 1rem 0;
   color: ${color.red};
 
+  text-shadow: 1px 5px 6px rgba(0, 0, 0, 0.91);
   animation: ${moveInRight} 1s ease-out;
 `;
 
@@ -78,7 +67,7 @@ export const MainContent = styled.main`
   margin-top: -20vh;
 
   h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 700;
     color: ${color.red};
@@ -87,9 +76,11 @@ export const MainContent = styled.main`
   }
   p {
     color: ${color.black};
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2rem;
     padding: 1rem;
+    font-family: "Crimson Text";
+    text-shadow: 6px 2px 2px rgba(0, 0, 0, 0.1);
   }
   ul {
     margin: 0;
@@ -138,9 +129,11 @@ export const Client = styled.div`
   -moz-perspective: 150rem;
   h3 {
     letter-spacing: 0.5rem;
-    color: ${color.blue};
+    color: ${color.red};
   }
   p {
+    font-size: 1.5rem;
+    font-weight: 400;
     color: ${color.black};
     /* text-overflow: ellipsis;
     word-wrap: break-word;

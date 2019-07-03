@@ -73,10 +73,11 @@ export const MainContent = styled.main`
     color: ${color.red};
     letter-spacing: 0.5rem;
     padding: 0 1rem 2rem;
+    font-family: "Montserrat", sans-serif;
   }
   p {
     color: ${color.black};
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2rem;
     padding: 1rem;
     font-family: "Crimson Text";

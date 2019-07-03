@@ -68,7 +68,7 @@ const Landing = () => {
           <Typer
             className="center-align"
             heading={"You will"}
-            dataText={["Learn", "Implement", "Master"]}
+            dataText={["Learn", "Master", "Implement"]}
           />
         </section>
       </MainContent>

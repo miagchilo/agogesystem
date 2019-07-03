@@ -74,7 +74,7 @@ export const HeadSub = styled.span`
 
 export const MainContent = styled.main`
   background-color: ${color.lightGrey};
-  padding: 25rem 0;
+  padding: 20rem 0;
   margin-top: -20vh;
 
   h2 {

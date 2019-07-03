@@ -11,10 +11,9 @@ import {
   Client,
   SectionPricing
 } from "./style";
-
 import { Btn } from "../../styles/Buttons";
 import video from "../../images/video.mp4";
-
+import Typer from "../Typer";
 const Landing = () => {
   return (
     <div>
@@ -57,20 +56,20 @@ const Landing = () => {
         <section className="container">
           <h2 className="center-align">the agogesystem promise</h2>
           <p className="flow-text center-align">
-            At MusclePharm, we promise to develop and bring to market the
-            safest, most effective and rigorously tested nutritional and sports
-            supplementation products possible. The purpose of every MusclePharm
-            product is to enhance an athletes performance and health - all
-            without the use of banned substances. Our team philosophy is We Live
-            This. As current and former athletes, we only make products that we
-            personally believe in and use every day. Our company values:
+            At Agoge System, we promise that you will be coached by
+            Practitioners of the as well. Not just businessmen who want to earn
+            money. You will be treated as part of our tribe, not just a single
+            transaction. We want to see you grow into the best version of
+            yourself, not just forget about you after providing you a plan. We
+            promise ro provide you with good programming to give you the most
+            improvements in a smart and pratical way. We don't believe in the
+            motto "No Pain No GAIN" instead we believe in "No Brain No Gain".
           </p>
-          <ul>
-            <li>BUILD CONFIDENCE</li>
-            <li>TRANSPARENCY</li>
-            <li>RESILIENCY</li>
-            <li>MOTIVATED</li>
-          </ul>
+          <Typer
+            className="center-align"
+            heading={"You will"}
+            dataText={["Learn", "Implement", "Master"]}
+          />
         </section>
       </MainContent>
       {/* section */}

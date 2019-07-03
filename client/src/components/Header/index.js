@@ -19,11 +19,7 @@ class Header extends Component {
       case null:
         return;
       case false:
-        return (
-          <li>
-            <a href="/auth/google">Login With Google</a>
-          </li>
-        );
+        return <li>{/* <a href="/auth/google">Login With Google</a> */}</li>;
       default:
         return [
           <li key={1}>
@@ -50,16 +46,16 @@ class Header extends Component {
                 </a>
               </li>
               <li>
-                <a href="sass.html">Home</a>
+                <Link to="/">HOME</Link>
               </li>
               <li>
-                <a href="badges.html">Coaching</a>
+                <Link to="/">COACHING</Link>
               </li>
               <li>
-                <a href="collapsible.html">Contact Us</a>
+                <Link to="/">BLOG</Link>
               </li>
               <li>
-                <a href="mobile.html">Follow Us</a>
+                <Link to="/">CONTACT US</Link>
               </li>
             </div>
           </MobileNav>
@@ -82,16 +78,16 @@ class Header extends Component {
             </Link>
             <ul className="right hide-on-med-and-down">
               <li>
-                <Link to="/">About</Link>
+                <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/">Train with us</Link>
+                <Link to="/">COACHING</Link>
               </li>
               <li>
-                <Link to="/">Contact</Link>
+                <Link to="/">BLOG</Link>
               </li>
               <li>
-                <Link to="/">Blog</Link>
+                <Link to="/">CONTACT US</Link>
               </li>
               {this.renderContent()}
             </ul>

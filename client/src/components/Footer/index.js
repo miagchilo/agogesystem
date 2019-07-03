@@ -43,10 +43,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-copyright">
+      <div className="footer-copyright right-align">
         <div className="container">
           © 2019 Copyright by{" "}
-          <a href="http://takatoshiwada.com">Takatoshi Wada</a>
+          <a href="http://takatoshiwada.com">Agoge System</a>
         </div>
       </div>
     </FooterStyle>

@@ -52,3 +52,9 @@ export const textFocusIn = keyframes`
     }
 }
 `;
+
+export const blink = keyframes`
+    50% {
+    border-color: transparent;
+  }
+`;

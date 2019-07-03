@@ -33,4 +33,7 @@ export const FooterStyle = styled.div`
       height: auto;
     }
   }
+  .footer-copyright a {
+    color: ${color.red};
+  }
 `;

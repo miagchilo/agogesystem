@@ -56,12 +56,13 @@ export const HeadSub = styled.span`
   letter-spacing: 1.75rem;
   padding: 1rem 0;
   color: ${color.red};
+  margin-bottom: 5rem;
 
   text-shadow: 1px 5px 6px rgba(0, 0, 0, 0.91);
   animation: ${moveInRight} 1s ease-out;
 `;
 
-export const MainContent = styled.main`
+export const AboutUs = styled.main`
   background-color: ${color.lightGrey};
   padding: 20rem 0;
   margin-top: -20vh;
@@ -164,12 +165,41 @@ export const Client = styled.div`
   }
 `;
 
-export const SectionPricing = styled.div`
+export const Promise = styled.main`
   background-color: ${color.lightGrey};
-  padding: 15rem 0;
+  padding: 20rem 0;
+  margin-top: -10vh;
 
-  .story {
-    width: 75%;
-    margin: 0 auto;
+  h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: ${color.red};
+    letter-spacing: 0.5rem;
+    padding: 0 1rem 2rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    color: ${color.black};
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: "Crimson Text";
+    text-shadow: 6px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 2rem;
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 40px 0 30px;
+      vertical-align: top;
+      color: ${color.red};
+      font-size: 2rem;
+      font-weight: 700;
+    }
   }
 `;

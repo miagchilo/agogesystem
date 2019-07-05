@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   HeroStyle,
   VideoStyle,
@@ -6,14 +8,15 @@ import {
   HeadingPrimary,
   HeadMain,
   HeadSub,
-  MainContent,
+  AboutUs,
   SectionClient,
   Client,
-  SectionPricing
+  Promise
 } from "./style";
 import { Btn } from "../../styles/Buttons";
 import video from "../../images/video.mp4";
 import Typer from "../Typer";
+
 const Landing = () => {
   return (
     <div>
@@ -32,38 +35,19 @@ const Landing = () => {
               </HeadSub>
             </HeadingPrimary>
           </div>
-          <div className="row center">
-            <Btn
-              white
-              href="https://tattp://materializecss.com/getting-started.html"
-              id="download-button"
-            >
-              Get Started
-            </Btn>
-          </div>
         </TextBox>
       </HeroStyle>
-      {/* <blockquote>
-        A lot of [newbies and enthusiasts] fail their fitness journey. Why?
-        Simple. They don't know where and how to start. There are a lot of
-        "gurus" out there shouting different strategies and it's overwhelming to
-        even know where to start. With Agoge System, You'll go through a 14-Week
-        Program that cuts through the noise and provides you a step by step
-        roadmap with all the support you need to finally achieve the results you
-        want. (Obviously, you have to do the work).
-      </blockquote> */}
-      <MainContent>
+      <AboutUs>
         <section className="container">
-          <h2 className="center-align">the agogesystem promise</h2>
+          <h2 className="center-align">About Us</h2>
           <p className="flow-text center-align">
-            At Agoge System, we promise that you will be coached by
-            Practitioners of the game as well. Not just businessmen who want to
-            earn money. You will be treated as part of our tribe, not just a
-            single transaction. We want to see you grow into the best version of
-            yourself, not just forget about you after providing you a plan. We
-            promise ro provide you with good programming to give you the most
-            improvements in a smart and pratical way. We don't believe in the
-            motto "No Pain No GAIN" instead we believe in "No Brain No Gain".
+            A lot of enthusiasts fail their fitness journey. Why? Simple. They
+            don't know where and how to start. There are a lot of "gurus" out
+            there shouting different strategies and it's overwhelming to even
+            know where to start. With Agoge System, You'll go through a 14-Week
+            Program that cuts through the noise and provides you a step by step
+            roadmap with all the support you need to finally achieve the results
+            you want.
           </p>
           <Typer
             className="center-align"
@@ -71,7 +55,7 @@ const Landing = () => {
             dataText={["Learn", "Master", "Implement"]}
           />
         </section>
-      </MainContent>
+      </AboutUs>
       {/* section */}
       <SectionClient>
         <div className="row">
@@ -117,14 +101,21 @@ const Landing = () => {
           </div>
         </div>
       </SectionClient>
-      {/* about us */}
-      <SectionPricing>
-        {/* <h2 className="center-align">the agogesystem promise</h2>
-        <div className="row">
-          <div className="story">TEXT</div>
-        </div> */}
-      </SectionPricing>
-      {/* end of about us */}
+      <Promise>
+        <section className="container">
+          <h2 className="center-align">the agogesystem promise</h2>
+          <p className="flow-text center-align">
+            At Agoge System, we promise that you will be coached by
+            Practitioners of the game as well. Not just businessmen who want to
+            earn money. You will be treated as part of our tribe, not just a
+            single transaction. We want to see you grow into the best version of
+            yourself, not just forget about you after providing you a plan. We
+            promise ro provide you with good programming to give you the most
+            improvements in a smart and pratical way. We don't believe in the
+            motto "No Pain No GAIN" instead we believe in "No Brain No Gain".
+          </p>
+        </section>
+      </Promise>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Payments from "../Payments";
 import { Navigation, MobileNav } from "./style";
 import M from "materialize-css";
 
+import animateScrollTo from "animated-scroll-to";
 class Header extends Component {
   componentDidMount() {
     const elem = document.querySelector(".sidenav");
@@ -13,7 +14,6 @@ class Header extends Component {
       inDuration: 250
     });
   }
-
   renderContent() {
     switch (this.props.auth) {
       case null:
@@ -81,7 +81,13 @@ class Header extends Component {
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/coaching">COACHING</Link>
+                <a
+                  onClick={() => {
+                    animateScrollTo(700);
+                  }}
+                >
+                  ABOUT US
+                </a>
               </li>
               <li>
                 <Link to="/">BLOG</Link>

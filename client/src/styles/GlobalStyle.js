@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import { color } from "../styles/Theme";
 const GlobalStyle = createGlobalStyle`
     *,
     *::after,
@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         line-height: 1.7;
         color: #777;
+        a:hover {
+            color: ${color.red};
+        }
+
     }
 `;
 

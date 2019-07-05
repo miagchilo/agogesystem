@@ -40,11 +40,27 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+            <div className="emailbox">
+              <div className="left-align">
+                email:
+                <a className="email" href="mailto:fueledbytaching@gmail.com">
+                  agogesystem@gmail.com
+                </a>
+              </div>
+              <ul>
+                <li>
+                  <a href="!#">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="!#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div className="footer-copyright right-align">
-        <div className="container">
+      <div className="footer-copyright ">
+        <div className="container right-align">
           © 2019 Copyright by{" "}
           <a href="http://takatoshiwada.com">Agoge System</a>
         </div>

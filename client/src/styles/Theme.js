@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 export const color = {
   white: "#FFFFFF",
   black: "#202020",
@@ -6,5 +8,15 @@ export const color = {
   darkGrey: "#777",
   darkerGrey: "#333",
   blue: "#2660A4;",
+  lightblue: "#039be5",
   red: "#990000" //! accent hover link color
 };
+
+export const Highlight = styled.span`
+  background: ${props => (props.red ? color.red : color.blue)};
+  color: ${color.white};
+`;
+
+export const Underline = styled.span`
+  box-shadow: inset 0 -0.35em 0 ${color.red};
+`;

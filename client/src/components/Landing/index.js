@@ -16,6 +16,7 @@ import {
 import { Btn } from "../../styles/Buttons";
 import video from "../../images/video.mp4";
 import Typer from "../Typer";
+import { Highlight, Underline } from "../../styles/Theme";
 
 const Landing = () => {
   return (
@@ -44,10 +45,10 @@ const Landing = () => {
             A lot of enthusiasts fail their fitness journey. Why? Simple. They
             don't know where and how to start. There are a lot of "gurus" out
             there shouting different strategies and it's overwhelming to even
-            know where to start. With Agoge System, You'll go through a 14-Week
-            Program that cuts through the noise and provides you a step by step
-            roadmap with all the support you need to finally achieve the results
-            you want.
+            know where to start. With Agoge System,
+            <Underline> You'll go through a 14-Week Program</Underline> that
+            cuts through the noise and provides you a step by step roadmap with
+            all the support you need to finally achieve the results you want.
           </p>
           <Typer
             className="center-align"

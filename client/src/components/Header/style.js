@@ -5,6 +5,11 @@ export const Navigation = styled.nav`
   background-color: ${color.black};
   position: fixed;
   z-index: 10000;
+  .logo {
+    height: 5rem;
+    width: 5rem;
+    margin-top: 0.6rem;
+  }
   a {
     font-size: 1.6rem;
   }

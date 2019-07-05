@@ -5,6 +5,8 @@ import Payments from "../Payments";
 import { Navigation, MobileNav } from "./style";
 import M from "materialize-css";
 
+import logo from "../../images/load.png";
+
 import animateScrollTo from "animated-scroll-to";
 class Header extends Component {
   componentDidMount() {
@@ -74,7 +76,7 @@ class Header extends Component {
               to={this.props.auth ? "/surveys" : "/"}
               className="left brand-logo"
             >
-              Logo
+              <img className="logo" src={logo} />
             </Link>
             <ul className="right hide-on-med-and-down">
               <li>
@@ -82,11 +84,22 @@ class Header extends Component {
               </li>
               <li>
                 <a
+                  href="#!"
                   onClick={() => {
                     animateScrollTo(700);
                   }}
                 >
                   ABOUT US
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#!"
+                  onClick={() => {
+                    animateScrollTo(1400);
+                  }}
+                >
+                  TESTIMONY
                 </a>
               </li>
               <li>

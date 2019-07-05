@@ -27,6 +27,12 @@ export const FooterStyle = styled.div`
       }
     }
   }
+  .emailbox {
+    margin-top: 3rem;
+    .email {
+      margin-left: 0.5rem;
+    }
+  }
   .logo-box {
     .footer_logo {
       width: 10rem;

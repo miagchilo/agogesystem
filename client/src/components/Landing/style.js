@@ -79,7 +79,7 @@ export const AboutUs = styled.main`
   p {
     color: ${color.black};
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding: 1rem;
     font-family: "Crimson Text";
     text-shadow: 6px 2px 2px rgba(0, 0, 0, 0.1);
@@ -182,7 +182,7 @@ export const Promise = styled.main`
   p {
     color: ${color.black};
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding: 1rem;
     font-family: "Crimson Text";
     text-shadow: 6px 2px 2px rgba(0, 0, 0, 0.1);

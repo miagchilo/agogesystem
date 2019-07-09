@@ -49,7 +49,6 @@ class Typer extends React.Component {
         loopNum: loopNum + 1
       });
     }
-
     setTimeout(this.handleType, typingSpeed);
   };
 

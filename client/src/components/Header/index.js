@@ -48,16 +48,22 @@ class Header extends Component {
                 </a>
               </li>
               <li>
-                <Link to="/">HOME</Link>
+                <Link className="sidenav-close" to="/">
+                  HOME
+                </Link>
               </li>
               <li>
-                <Link to="/">COACHING</Link>
+                <a className="sidenav-close" href="/coaching">
+                  COACHING
+                </a>
               </li>
               <li>
                 <Link to="/">BLOG</Link>
               </li>
               <li>
-                <Link to="/">CONTACT US</Link>
+                <Link className="sidenav-close" to="/">
+                  CONTACT US
+                </Link>
               </li>
             </div>
           </MobileNav>
@@ -76,7 +82,7 @@ class Header extends Component {
               to={this.props.auth ? "/surveys" : "/"}
               className="left brand-logo"
             >
-              <img className="logo" src={logo} />
+              <img alt="logo" className="logo" src={logo} />
             </Link>
             <ul className="right hide-on-med-and-down">
               <li>
@@ -104,6 +110,9 @@ class Header extends Component {
               </li>
               <li>
                 <Link to="/">BLOG</Link>
+              </li>
+              <li>
+                <a href="/coaching">COACHING</a>
               </li>
               <li>
                 <Link to="/">CONTACT US</Link>

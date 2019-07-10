@@ -35,6 +35,13 @@ const Landing = () => {
                 unleash your full potential
               </HeadSub>
             </HeadingPrimary>
+            <Btn
+              white
+              href="/coaching"
+              className="waves-effect waves-light btn pulse"
+            >
+              Start Here
+            </Btn>
           </div>
         </TextBox>
       </HeroStyle>
@@ -50,6 +57,15 @@ const Landing = () => {
             cuts through the noise and provides you a step by step roadmap with
             all the support you need to finally achieve the results you want.
           </p>
+          <div className="center-align">
+            <Btn
+              white
+              href="/coaching"
+              className="waves-effect waves-light btn pulse"
+            >
+              Start Here
+            </Btn>
+          </div>
           <Typer
             className="center-align"
             heading={"You will"}

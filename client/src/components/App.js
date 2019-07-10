@@ -1,5 +1,5 @@
 import React, { Component, lazy, Suspense } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actions from "../actions";
 import GlobalStyle from "../styles/GlobalStyle";
@@ -19,6 +19,25 @@ const Landings = lazy(() => {
   ]).then(([moduleExports]) => moduleExports);
 });
 
+const NoHeadFoot = () => (
+  <React.Fragment>
+    <Route path="/coaching" component={Coaching} />
+  </React.Fragment>
+);
+
+const DefaultLayout = () => (
+  <React.Fragment>
+    <GlobalStyle />
+    <Header />
+    <Suspense fallback={<Loading />}>
+      <Route exact path="/" component={Landings} />
+      <Route exact path="/coaching" component={Coaching} />
+      <Footer />
+    </Suspense>
+    <Route exact path="/surveys" component={Dashboard} />
+    <Route path="/surveys/new" component={SurveyNew} />
+  </React.Fragment>
+);
 class App extends Component {
   componentDidMount() {
     this.props.fetchUser();
@@ -26,15 +45,10 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <GlobalStyle />
-        <Header />
-        <Suspense fallback={<Loading />}>
-          <Route exact path="/" component={Landings} />
-          <Route exact path="/coaching" component={Coaching} />
-          <Footer />
-        </Suspense>
-        <Route exact path="/surveys" component={Dashboard} />
-        <Route path="/surveys/new" component={SurveyNew} />
+        <Switch>
+          <Route exact path="/coaching" component={NoHeadFoot} />
+          <Route component={DefaultLayout} />
+        </Switch>
       </BrowserRouter>
     );
   }

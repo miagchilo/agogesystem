@@ -21,6 +21,7 @@ const Landings = lazy(() => {
 
 const NoHeadFoot = () => (
   <React.Fragment>
+    <GlobalStyle />
     <Route path="/coaching" component={Coaching} />
   </React.Fragment>
 );

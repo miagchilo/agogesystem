@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { color } from "../../styles/Theme";
 import { moveInLeft, moveInRight } from "../../styles/Keyframes";
 
-import HeroImg from "../../images/hero.jpg";
+import HeroImg from "../../images/HeroImg.jpg";
 import SecImg from "../../images/section.jpg";
 
 import dan from "../../images/dan.jpg";

@@ -13,7 +13,7 @@ export const color = {
 };
 
 export const Highlight = styled.span`
-  background: ${props => (props.red ? color.red : color.blue)};
+  background: ${props => (props.red ? color.red : color.white)};
   color: ${color.white};
 `;
 

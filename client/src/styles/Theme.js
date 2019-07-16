@@ -18,5 +18,5 @@ export const Highlight = styled.span`
 `;
 
 export const Underline = styled.span`
-  box-shadow: inset 0 -0.1em 0 ${color.red};
+  box-shadow: inset 0 -0.08em 0 ${color.red};
 `;

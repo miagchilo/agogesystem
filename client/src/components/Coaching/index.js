@@ -4,8 +4,8 @@ import {
   CoachingStyle,
   CoachingIntro,
   TextBox,
-  HeadingPrimary,
-  HeadSub
+  Banner,
+  Section
 } from "./style";
 import { Highlight, Underline } from "../../styles/Theme";
 import animateScrollTo from "animated-scroll-to";
@@ -48,6 +48,66 @@ const Coaching = () => {
             </TextBox>
           </div>
         </CoachingIntro>
+        <Banner className="col s12 m12 l12">
+          <div className="center-align">
+            <p className="bannerP">
+              Let us help free you from the start and stop bullshit cycle/s
+            </p>
+            <Btn
+              white
+              href="/coaching"
+              className="waves-effect waves-light btn pulse center-align"
+            >
+              Train with us now
+            </Btn>
+          </div>
+        </Banner>
+        <Section className="container">
+          <h1 className="center-align">
+            <Underline>IF YOU ARE </Underline>
+          </h1>
+          <ul>
+            <li className="secP">
+              <i className="icon fas fa-check" />
+              struggling with achieving results in your fitness journey in the
+              past.
+            </li>
+            <li className="secP">
+              <i className="icon fas fa-check" />
+              Tried different programs and latest fads recommendation yet
+              nothing seems to work.
+            </li>
+            <li className="secP">
+              <i className="icon fas fa-check" />
+              Wanted to lose unwanted fat, gain muscle and finally get the body
+              you've always dreamed of.
+            </li>
+          </ul>
+          <h4 className="secP center-align">
+            <Underline>
+              If that's the case - finally, you're in the right place.
+            </Underline>
+          </h4>
+          <div className="secBottom">
+            <span className="agoge center-align">Agoge System </span>
+            <p className="secP center-align">
+              was built to help people just like you. It's our mission to
+              completely transform the lives of xxx to help them achieve results
+              and live a healthier life.
+            </p>
+            <p className="secP center-align">
+              Click below to take part in the 14-week program
+              <br />
+              <Btn
+                red
+                href="/coaching"
+                className="waves-effect waves-light btn pulse center-align"
+              >
+                Train with us now
+              </Btn>
+            </p>
+          </div>
+        </Section>
       </CoachingStyle>
     </React.Fragment>
   );

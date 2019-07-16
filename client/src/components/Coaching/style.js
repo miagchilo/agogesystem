@@ -42,7 +42,7 @@ export const TextBox = styled.div`
   top: 10%;
   @media ${device.tablet} {
     top: 40%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -40%);
     margin: 3rem;
   }
@@ -82,5 +82,72 @@ export const TextBox = styled.div`
     display: block;
     margin: 0 auto;
     background-color: ${color.red};
+  }
+`;
+export const Banner = styled.div`
+  height: 21rem;
+  padding: 2rem;
+  background: ${color.black};
+  @media ${device.mobileLmax} {
+    height: 22rem;
+    padding: 2.6rem;
+  }
+  .bannerP {
+    color: ${color.white};
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-size: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    @media ${device.mobileLmax} {
+      font-size: 2rem;
+    }
+  }
+  .btn {
+    margin: 2rem;
+    @media ${device.mobileLmax} {
+      margin: 0;
+    }
+  }
+`;
+export const Section = styled.div`
+  height: 100vh;
+  border-top: 0.1rem solid ${color.red};
+  padding: 2rem;
+  h1 {
+    color: ${color.red};
+    margin-bottom: 8rem;
+  }
+  h4 {
+    line-height: 2;
+  }
+  ul {
+    margin: 0 0 3rem 0;
+    .fas {
+      margin-right: 2rem;
+    }
+  }
+  .secP {
+    color: ${color.black};
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: block;
+  }
+  .agoge {
+    display: block;
+    color: ${color.red};
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+  .secBottom {
+    margin: 3rem 0;
+    .btn {
+      margin-top: 2rem;
+    }
   }
 `;

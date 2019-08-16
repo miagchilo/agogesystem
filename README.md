@@ -1,4 +1,4 @@
-# agogesystem
+# agogesystem (WIP)
 online fitness coaching platform
 with Google Login Authentication and Stripe for Payment
 
